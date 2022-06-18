@@ -24,9 +24,7 @@ main {
 }
 div {
   justify-content: center;
-  /* width: 100%; */
-  /* align-items: center; */
-}
+  }
 #suv {
   background-color: hsl(184, 100%, 22%);
 }
@@ -42,12 +40,16 @@ div {
 button {
   background-color: hsl(0, 0%, 95%);
   padding: 10px;
-
-  border-radius: 7px;
+  border-radius: 20px;
+  width: 50%;
+  margin: 40px;
 }
-p,
-h1 {
+p {
   color: hsla(0, 0%, 100%, 0.75);
   padding: 2rem;
   font-size: 20px;
+}
+h1 {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 2rem;
 }
