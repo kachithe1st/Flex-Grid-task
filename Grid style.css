@@ -1,0 +1,54 @@
+/* CSS RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(9, 9, 31);
+  display: flex;
+  place-items: center;
+  height: 100vh;
+}
+main {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "a a a a b b"
+    "a a a a b b"
+    "c c c d d d"
+    "c c c e e e";
+  margin: auto;
+  grid-auto-columns: 100px;
+  grid-auto-rows: 100px;
+}
+.box1 {
+  background-color: tomato;
+  grid-area: a;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box2 {
+  background-color: yellow;
+  grid-area: b;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.box3 {
+  background-color: green;
+  grid-area: c;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.box4 {
+  background-color: blue;
+  grid-area: d;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.box5 {
+  background-color: blue;
+  grid-area: e;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
